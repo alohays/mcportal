@@ -1,0 +1,52 @@
+site_name: mcportal
+repo_url: https://github.com/alohays/mcportal
+site_url: https://alohays.github.io/mcportal
+site_description: MCPortal is an open-source bridge between the Model Context Protocol (MCP) and OpenAI's Agents SDK & built-in tools. It enables developers to use OpenAI's powerful tools while staying compliant with the MCP protocol standard.
+site_author: alohays
+edit_uri: edit/main/docs/
+repo_name: alohays/mcportal
+copyright: Maintained by <a href="https://alohays.com">alohays</a>.
+
+nav:
+  - Home: index.md
+  - Modules: modules.md
+plugins:
+  - search
+  - mkdocstrings:
+      handlers:
+        python:
+          paths: ["mcportal"]
+theme:
+  name: material
+  feature:
+    tabs: true
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: white
+      accent: deep orange
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      accent: deep orange
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  icon:
+    repo: fontawesome/brands/github
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/alohays/mcportal
+    - icon: fontawesome/brands/python
+      link: https://pypi.org/project/mcportal
+
+markdown_extensions:
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
